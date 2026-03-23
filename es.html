@@ -44,7 +44,7 @@
   .hero-right { position: relative; width: 100%; height: 52vw; min-height: 200px; max-height: 360px; overflow: hidden; flex-shrink: 0; }
   .hero-right img { width: 100%; height: 100%; object-fit: cover; object-position: center 88%; }
   .hero-right::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 40%, var(--deep) 100%); }
-  .hero-left { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0.6rem 1rem 0.6rem; text-align: center; }
+  .hero-left { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0.35rem 1rem 0.35rem; text-align: center; }
   .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.85rem, 7.5vw, 3.5rem); font-weight: 400; line-height: 1.12; color: var(--terracotta); letter-spacing: 0.06em; margin-bottom: 0.45rem; text-rendering: optimizeLegibility; }
   .hero-sub { font-size: clamp(0.84rem, 3vw, 1.15rem); font-weight: 300; line-height: 1.6; color: rgba(247, 243, 238, 0.82); max-width: 480px; margin-bottom: 1.25rem; letter-spacing: 0.02em; }
   .hero-location { font-size: 0.65rem; font-weight: 400; letter-spacing: 0.52em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.4rem; opacity: 0.92; }
@@ -138,7 +138,7 @@
     .hero-left { position: relative; z-index: 2; width: 60%; padding: 2rem 3rem 2rem 4.5rem; align-items: flex-start; text-align: left; }
     .hero-buttons { flex-direction: row; }
     .philosophy { display: grid; grid-template-columns: 1fr 2fr; gap: 5rem; padding: 7rem 6rem; }
-    .services-grid { grid-template-columns: repeat(3, 1fr); }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
     .service-card { height: 580px; }
     .classes { padding: 4.25rem 6rem; }
     .classes-visual-section { padding: 0 6rem 4rem; }
@@ -210,6 +210,16 @@
         <h3 class="service-name">Reiki</h3>
         <p class="service-desc">Canaliza la energía vital para restaurar el equilibrio emocional y físico con una sanación suave y profunda.</p>
         <span class="service-tag">Energía · Sanación · Equilibrio</span>
+      </div>
+    </div>
+
+    <div class="service-card reveal">
+      <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=800&q=85&fit=crop" alt="Sesión de ballet — bailarina practicando técnica clásica en la barra" />
+      <div class="service-overlay"></div>
+      <div class="service-content">
+        <h3 class="service-name">Ballet</h3>
+        <p class="service-desc">Desarrolla elegancia, fuerza y flexibilidad mediante la técnica del ballet clásico. Mejora la postura, coordinación y gracia en un ambiente de apoyo.</p>
+        <span class="service-tag">Gracia · Flexibilidad · Técnica</span>
       </div>
     </div>
   </div>
@@ -289,7 +299,7 @@
       <div class="info-icon">🌿</div>
       <div>
         <p class="info-label">Servicios</p>
-        <p class="info-value">Pilates · Meditación · Reiki</p>
+        <p class="info-value">Pilates · Meditación · Reiki · Ballet</p>
       </div>
     </div>
     <div class="contact-info-item">
