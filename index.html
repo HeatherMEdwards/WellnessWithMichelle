@@ -368,10 +368,14 @@
   .about { padding: 2.5rem 1.5rem; background: var(--warm); text-align: center; }
   .about .section-title { white-space: nowrap; font-size: clamp(1.4rem, 4.5vw, 2.8rem); }
   .about-content { max-width: 600px; margin: 0 auto; }
+  .about-layout { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
+  .about-img { width: 100%; max-width: 300px; height: auto; border-radius: 8px; object-fit: cover; }
+  .about-text-wrap { text-align: center; }
   .about-text {
-    font-size: 0.88rem; font-weight: 200;
-    line-height: 1.8; color: rgba(44,38,32,0.7);
+    font-size: 1.15rem; font-weight: 200;
+    line-height: 1.8; color: #000; margin-bottom: 1rem;
   }
+  .about-text:last-child { margin-bottom: 0; }
 
   /* ══════════════════════════════
      CONTACT
@@ -469,6 +473,11 @@
     .classes-visual-section { padding: 0 3rem 3rem; }
 
     .about { padding: 3rem 2rem; }
+    .about-content { max-width: 800px; }
+    .about-layout { flex-direction: row; text-align: left; align-items: flex-start; }
+    .about-img { max-width: 240px; }
+    .about-text-wrap { text-align: left; }
+    .about .section-title { text-align: left; }
 
     .testimonials { padding: 1.5rem 1.5rem; }
     .testimonials-grid { display: grid; grid-template-columns: 1fr; justify-items: center; max-width: 560px; margin-left: auto; margin-right: auto; }
@@ -531,6 +540,8 @@
 
     /* About */
     .about { padding: 4rem 6rem; }
+    .about-content { max-width: 900px; }
+    .about-img { max-width: 280px; }
 
     /* Testimonials 3-col */
     .testimonials { padding: 2rem 3rem; }
@@ -664,10 +675,18 @@
 <!-- ABOUT -->
 <section class="about">
   <div class="about-content reveal">
-    <h2 class="section-title" style="color:var(--deep)">About Michelle Monet Smith</h2>
-    <p class="about-text">
-      Michelle Monet Smith is a wellness educator, meditation guide, Reiki Master, and movement instructor. With training in ballet pedagogy, integrative psychology studies, Pilates, nutrition, and energy healing, she offers a holistic approach to well-being, personal growth, and mindful living. Her work focuses on self-sovereignty, embodiment, nervous system wellness, and helping others cultivate greater presence, resilience, and balance in everyday life.
-    </p>
+    <div class="about-layout">
+      <img class="about-img" src="assets/about-michelle.jpg" alt="Michelle Monet Smith" />
+      <div class="about-text-wrap">
+        <h2 class="section-title" style="color:var(--deep)">About Michelle Monet Smith</h2>
+        <p class="about-text">
+          Michelle Monet Smith is a wellness educator, meditation guide, Reiki Master, and movement instructor. With training in ballet pedagogy, integrative psychology studies, Pilates, nutrition, and energy healing, she offers a holistic approach to well-being, personal growth, and mindful living.
+        </p>
+        <p class="about-text">
+          Her work focuses on self-sovereignty, embodiment, nervous system wellness, and helping others cultivate greater presence, resilience, and balance in everyday life.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
